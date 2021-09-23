@@ -1,0 +1,29 @@
+.button{
+    min-width: 175px;
+    padding: 15px 25px;
+    background: #39385E;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 65px;
+    display: inline-block;
+    font-weight: 500;
+    transition: .3s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    &:hover{
+        background: #fff;
+        color: #39385E;
+        border: 1px solid #39385E;
+        path{
+            fill: #39385E;
+        }
+    }
+    &_blue{
+        background: #2E57F8;
+        &:hover{
+            background: #fff;
+            color: #2E57F8;
+            border: 1px solid #2E57F8;
+        }
+    }
+}

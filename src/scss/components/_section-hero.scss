@@ -1,0 +1,99 @@
+.section-hero{
+    margin-bottom: 55px;
+    @include tablet{
+        margin-bottom: 85px;
+    }
+    &__bg{
+        margin: 0 auto;
+        background-image: url('../images/busquedas/banner-busquedas.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 12px;
+        height: 230px;
+        padding: 70px 10px 55px;
+        box-shadow: 0px 26px 43px rgba(0, 0, 0, 0.24);
+        position: relative;
+        margin-bottom: 35px;
+    }
+    &__title{
+        color: #fff;
+        font-size: 40px;
+        font-weight: 600;
+        @include tablet{
+            font-size: 50px;
+        }
+    }
+    &__wrap{
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        opacity: .5;
+        mix-blend-mode: overlay;
+        display: none;
+        @include tablet{
+            display: block;
+        }
+        &.man{
+            margin-right: -18%;
+            @include desktop-sm{
+                margin-right: 15%;
+            }
+        }
+        &.girl{
+            margin-right: -68%;
+            @include desktop-sm{
+                margin-right: 0;
+                margin-left: 18%;
+            }
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            max-height: 230px;
+            object-fit: contain;
+        }
+    }
+    &__breadcrumbs{
+        ul{
+            display: flex;
+            flex-direction: column;
+            @include mobile-lg{
+                flex-direction: row;
+            }
+        }
+        li{
+            padding: 0 15px;
+            position: relative;
+            &::before{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                content: ">";
+            }
+            &:last-child{
+                &::before{
+                    display: none;
+                }
+            }
+            &.active{
+                a{
+                    text-decoration: underline;
+                    color: #2E57F8;
+                }  
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
