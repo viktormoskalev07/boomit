@@ -1,0 +1,69 @@
+@@include('html-templates/head.html',{
+    title:'Boomit Sumate',
+    metadesc:'page with very interesting content'
+    })
+    <section class="section-hero__banner">
+		<div class="container">
+			<div class="section-hero__banner-wrap">
+                <div class="text-block section-hero__banner-context">
+                    <h1 class="section-hero__banner-title">¡Comienza una increíble carrera en Boomit!</h1>
+                    <p class="mb-5">Conoce nuestras búsquedas activas</p>
+                    <a href="#" class="pink-btn">Búsquedas activas</a>
+                    <div class="mb-5 d-md-none"></div>
+                </div>
+                <div class="section-hero__banner-img section-hero__banner-img_desktop">
+                    <img src="images/sumate-banner.png" alt="sumate-banner">
+                </div>	
+                <div class="section-hero__banner-img section-hero__banner-img_mobile">
+                    <img src="images/sumate-banner-mobile.svg" alt="sumate-banner-mobile">
+                </div>		
+			</div>
+		</div>
+	</section>
+    <section class="block-text text-center section-text">
+        <div class="container">
+            <h2 class="title-red">Sumate a nuestro equipo </h2>
+            <p>Somos profesionales expert@s en diferentes áreas de Tecnología
+                y Estrategia en Marketing Digital. Nos apasiona lo que hacemos. 
+                Creemos en cada persona que conforma Boomit y construimos equipos
+                en los que el entusiasmo nos define. La curiosidad y la pasión por la comunicación digital mueven todas nuestras acciones.
+            </p>
+        </div>
+    </section>
+    <section class="card-img">
+        <div class="container">
+            <h2 class="title-red text-center">¿Cómo trabajamos?</h2>
+            <div class="card-img__wrapper">
+                @@loop('./html-templates/modules/card-img-item.html',[
+                {title:'Capacitación',text:'Plan de capacitación a medida.',img:'capacitacion'},
+                {title:'Cultura',text:'Cultura orientada a objetivos.',img:'cultura'},
+                {title:'Herramientas',text:'Herramientas de trabajo colaborativas.',img:'herramientas'},
+                {title:'Flexibilidad',text:'Teletrabajo flexible con régimen de vacaciones incluido.',img:'flexibilidad'},
+                ])
+            </div>
+            
+            <div class="text-center card-img__bottom-block">
+                <p class="mb-4">¡Comienza una increíble carrera en Boomit!</p>
+                <a href="#" class="pink-btn">Sumate</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-hero__breadcrumbs mb-5">
+        <div class="container">
+            <ul class="d-flex justify-content-center pb-md-3">
+                <li class="active"><a href="sumate.html">Sumate</a></li>
+                <li><a href="busquedas-activas.html">Búsquedas activas</a></li>
+                <li><a href="oferta-laborat.html">Oportunidad laboral</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    @@include('./html-templates/section-suscridete.html')
+    @@include('./html-templates/footer.html',{
+    })
+    
+    </body>
+    
+    </html>

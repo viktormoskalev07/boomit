@@ -1,0 +1,19 @@
+.title-red{
+    color: #EA464E;
+}
+.section-text{
+    margin-bottom: 50px;
+    @include tablet{
+        margin-bottom: 78px;
+    }
+    .title-red{
+        margin-bottom: 35px;
+    }
+    .container{
+        max-width: 770px;
+        margin: 0 auto;
+    }
+    p{
+        font-size: 21px;
+    }
+}

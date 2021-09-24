@@ -1,0 +1,44 @@
+.blog{
+    color: #39385E;
+    &__sub-title{
+        line-height: 1.2;
+        font-size: 28px;
+        font-family: 'GalanoGrotesque-Medium';
+        margin-bottom: 30px;
+        @include tablet{
+            font-size: 36px;
+            margin-bottom: 50px; 
+        }
+    }
+    &__wrapper{
+        max-width: 1125px;
+        margin-left: auto;
+        @include desktop-sm{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__content{
+        @include desktop-sm{
+            width: calc(100% - 400px);
+        }
+    }
+    &__sidebar{
+        @include desktop-sm{
+            width: 310px;
+        }
+        .cards__item{
+            width: 100%;
+            padding: 22px 30px;
+            margin: 0 0 20px;
+        }
+        .cards__title{
+            margin-bottom: 20px;
+        }
+        .cards__line{
+            right: 30px;
+            left: 30px;
+            bottom: 12px;
+        }
+    }
+}
