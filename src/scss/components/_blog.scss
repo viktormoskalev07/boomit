@@ -1,5 +1,9 @@
 .blog{
     color: #39385E;
+    margin-bottom: 60px;
+    @include tablet{
+        margin-bottom: 120px;
+    }
     &__sub-title{
         line-height: 1.2;
         font-size: 28px;
@@ -16,6 +20,7 @@
         @include desktop-sm{
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
         }
     }
     &__content{
@@ -25,12 +30,17 @@
     }
     &__sidebar{
         @include desktop-sm{
+            padding-left: 23px;
             width: 310px;
+            border-left: 4px solid #39385E;
         }
         .cards__item{
             width: 100%;
             padding: 22px 30px;
             margin: 0 0 20px;
+            &:last-child{
+                margin: 0;
+            }
         }
         .cards__title{
             margin-bottom: 20px;
@@ -39,6 +49,68 @@
             right: 30px;
             left: 30px;
             bottom: 12px;
+        }
+    }
+    &__list{
+        padding-left: 20px;
+        font-size: 18px;
+        @include tablet{
+            font-size: 21px;
+            margin-bottom: 50px;
+        }
+        li{
+            list-style-type: disc;
+            margin-bottom: 20px;
+        }
+    }
+    &__b-left{
+        border-left: 4px solid #39385E;
+        padding-left: 15px;
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+        @include tablet{
+            font-size: 24px;
+            padding-left: 30px;
+            margin-bottom: 50px;
+        }
+        @include desktop-sm{
+            margin-left: -30px;
+        }
+    }
+    &__block{
+        line-height: 1.3;
+        font-family: 'GalanoGrotesque-Medium';
+        background: #FAF7FC;
+        border-radius: 14px;
+        padding: 15px;
+        font-size: 18px;
+        margin-bottom: 30px;
+        @include tablet{
+            padding: 35px 10%;
+            font-size: 21px;
+            margin-bottom: 45px;
+        }
+        p{
+            &:last-child{
+                @include tablet{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    &__button{
+        margin: 30px 0;
+        button{
+            border: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+        }
+        
+        img{
+            display: inline;
+            margin-right: 8px;
         }
     }
 }

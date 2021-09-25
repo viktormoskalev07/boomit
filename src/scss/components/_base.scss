@@ -4304,3 +4304,10 @@ cursor:pointer;
     flex-wrap: wrap;
     align-items: center;
 }
+.link{
+	text-decoration: underline;
+	color: #2E57F8;
+	&:hover{
+		text-decoration: none;
+	}
+}
